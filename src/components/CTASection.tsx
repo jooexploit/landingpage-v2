@@ -259,7 +259,7 @@ const testimonials = [
   return (
     <section 
       ref={elementRef}
-      className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden"
+      className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-background via-muted to-background text-foreground relative overflow-hidden"
     >
       {/* Enhanced Background decoration with animations */}
       <div className="absolute inset-0">
@@ -300,15 +300,15 @@ const testimonials = [
                   />
                 ))}
               </div>
-              <span className="text-gray-300 text-sm sm:text-base">4.9/5 Rating</span>
+              <span className="text-muted-foreground text-sm sm:text-base">4.9/5 Rating</span>
             </div>
             
-            <div className="flex items-center space-x-2 text-gray-300">
+            <div className="flex items-center space-x-2">
               <Users className="h-4 w-4 text-primary" />
               <span className="text-sm sm:text-base">1000+ Happy Students</span>
             </div>
             
-            <div className="flex items-center space-x-2 text-gray-300">
+            <div className="flex items-center space-x-2">
               <TrendingUp className="h-4 w-4 text-green-500" />
               <span className="text-sm sm:text-base">95% Success Rate</span>
             </div>
@@ -323,7 +323,7 @@ const testimonials = [
             </span>
           </h2>
           
-          <p className={`text-lg sm:text-xl lg:text-2xl text-gray-300 leading-relaxed max-w-4xl mx-auto transition-all duration-1000 delay-600 ${
+          <p className={`text-lg sm:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-4xl mx-auto transition-all duration-1000 delay-600 ${
             hasBeenVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}>
             Join thousands of students who've transformed their academic experience. 
@@ -350,17 +350,17 @@ const testimonials = [
                 variant="outline"
                 size="lg" 
                 onClick={openVideoModal}
-                className="w-full sm:w-auto border-gray-600 hover:border-primary/50 text-gray-300 hover:text-white px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl font-semibold rounded-xl hover-lift group shadow-xl hover:shadow-white/10 transition-all duration-500 bg-white/5 backdrop-blur-sm relative overflow-hidden"
+                className="w-full sm:w-auto border-border hover:border-primary/50 text-muted-foreground hover:text-foreground px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl font-semibold rounded-xl hover-lift group shadow-xl hover:shadow-primary/10 transition-all duration-500 bg-background/5 backdrop-blur-sm relative overflow-hidden"
               >
                 <span className="relative z-10">Watch Demo</span>
                 <Play className="ml-3 h-5 sm:h-6 w-5 sm:w-6 transition-transform group-hover:scale-110 relative z-10" />
                 {/* Shimmer effect on hover */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transform -skew-x-12 group-hover:animate-shimmer transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/10 to-transparent opacity-0 group-hover:opacity-100 transform -skew-x-12 group-hover:animate-shimmer transition-opacity duration-500"></div>
               </Button>
             </div>
             
             {/* Enhanced trust indicators */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 text-sm sm:text-base text-gray-400 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
               <span className="flex items-center justify-center space-x-2">
                 <CircleDollarSign className="w-4 h-4 text-green-500" />
                 <span>Free forever</span>
@@ -376,46 +376,46 @@ const testimonials = [
             </div>
             
             {/* Social Media Section */}
-            <div className={`pt-6 sm:pt-8 border-t border-gray-700/50 transition-all duration-1000 delay-1000 ${
+            <div className={`pt-6 sm:pt-8 border-t border-border/50 transition-all duration-1000 delay-1000 ${
               hasBeenVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}>
-              <p className="text-gray-400 mb-4 text-sm sm:text-base">Follow us for study tips & updates</p>
+              <p className="text-muted-foreground mb-4 text-sm sm:text-base">Follow us for study tips & updates</p>
               <div className="flex items-center justify-center space-x-4 sm:space-x-6">
                 <a 
                   href="#" 
-                  className="group p-3 bg-white/5 hover:bg-white/10 rounded-full transition-all duration-300 hover-lift hover:shadow-lg hover:animate-social-bounce"
+                  className="group p-3 bg-background/5 hover:bg-background/10 rounded-full transition-all duration-300 hover-lift hover:shadow-lg hover:animate-social-bounce"
                   aria-label="Follow us on Twitter"
                   onMouseEnter={(e) => e.currentTarget.classList.add('animate-social-bounce')}
                   onAnimationEnd={(e) => e.currentTarget.classList.remove('animate-social-bounce')}
                 >
-                  <Twitter className="h-5 w-5 text-gray-400 group-hover:text-blue-400 transition-colors duration-300" />
+                  <Twitter className="h-5 w-5 text-muted-foreground group-hover:text-blue-400 transition-colors duration-300" />
                 </a>
                 <a 
                   href="#" 
-                  className="group p-3 bg-white/5 hover:bg-white/10 rounded-full transition-all duration-300 hover-lift hover:shadow-lg hover:animate-social-bounce"
+                  className="group p-3 bg-background/5 hover:bg-background/10 rounded-full transition-all duration-300 hover-lift hover:shadow-lg hover:animate-social-bounce"
                   aria-label="Follow us on Instagram"
                   onMouseEnter={(e) => e.currentTarget.classList.add('animate-social-bounce')}
                   onAnimationEnd={(e) => e.currentTarget.classList.remove('animate-social-bounce')}
                 >
-                  <Instagram className="h-5 w-5 text-gray-400 group-hover:text-pink-400 transition-colors duration-300" />
+                  <Instagram className="h-5 w-5 text-muted-foreground group-hover:text-pink-400 transition-colors duration-300" />
                 </a>
                 <a 
                   href="#" 
-                  className="group p-3 bg-white/5 hover:bg-white/10 rounded-full transition-all duration-300 hover-lift hover:shadow-lg hover:animate-social-bounce"
+                  className="group p-3 bg-background/5 hover:bg-background/10 rounded-full transition-all duration-300 hover-lift hover:shadow-lg hover:animate-social-bounce"
                   aria-label="Connect on LinkedIn"
                   onMouseEnter={(e) => e.currentTarget.classList.add('animate-social-bounce')}
                   onAnimationEnd={(e) => e.currentTarget.classList.remove('animate-social-bounce')}
                 >
-                  <Linkedin className="h-5 w-5 text-gray-400 group-hover:text-blue-600 transition-colors duration-300" />
+                  <Linkedin className="h-5 w-5 text-muted-foreground group-hover:text-blue-600 transition-colors duration-300" />
                 </a>
                 <a 
                   href="#" 
-                  className="group p-3 bg-white/5 hover:bg-white/10 rounded-full transition-all duration-300 hover-lift hover:shadow-lg hover:animate-social-bounce"
+                  className="group p-3 bg-background/5 hover:bg-background/10 rounded-full transition-all duration-300 hover-lift hover:shadow-lg hover:animate-social-bounce"
                   aria-label="Star us on GitHub"
                   onMouseEnter={(e) => e.currentTarget.classList.add('animate-social-bounce')}
                   onAnimationEnd={(e) => e.currentTarget.classList.remove('animate-social-bounce')}
                 >
-                  <Github className="h-5 w-5 text-gray-400 group-hover:text-white transition-colors duration-300" />
+                  <Github className="h-5 w-5 text-muted-foreground group-hover:text-foreground transition-colors duration-300" />
                 </a>
               </div>
             </div>
@@ -425,7 +425,7 @@ const testimonials = [
               hasBeenVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}>
               <div className="text-center mb-6">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2">
                   What Students Are Saying
                 </h3>
                 <div className="flex items-center justify-center space-x-1 mb-4">
@@ -435,11 +435,11 @@ const testimonials = [
                       className="h-4 w-4 text-yellow-400 fill-current" 
                     />
                   ))}
-                  <span className="ml-2 text-gray-300 text-sm">4.9/5 from 1000+ reviews</span>
+                  <span className="ml-2 text-muted-foreground text-sm">4.9/5 from 1000+ reviews</span>
                 </div>
               </div>
 
-              <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto overflow-hidden">
+              <div className="relative bg-background/5 backdrop-blur-sm border border-border rounded-2xl p-6 sm:p-8 max-w-4xl mx-auto overflow-hidden">
                 {/* Background quote decoration */}
                 <div className="absolute top-4 left-4 opacity-10">
                   <Quote className="h-12 w-12 text-primary" />
@@ -468,12 +468,12 @@ const testimonials = [
                         ))}
                       </div>
                       
-                      <blockquote className="text-lg sm:text-xl text-gray-300 italic leading-relaxed mb-4 max-w-2xl">
+                      <blockquote className="text-lg sm:text-xl text-muted-foreground italic leading-relaxed mb-4 max-w-2xl">
                         "{testimonials[currentTestimonial].content}"
                       </blockquote>
                       
-                      <div className="text-gray-400">
-                        <p className="font-semibold text-white text-sm sm:text-base">
+                      <div className="text-muted-foreground">
+                        <p className="font-semibold text-foreground text-sm sm:text-base">
                           {testimonials[currentTestimonial].name}
                         </p>
                         <p className="text-xs sm:text-sm">
@@ -488,7 +488,7 @@ const testimonials = [
                 <div className="flex items-center justify-between mt-6">
                   <button
                     onClick={prevTestimonial}
-                    className="p-2 text-gray-400 hover:text-white transition-colors duration-300 hover-lift"
+                    className="p-2 text-muted-foreground hover:text-foreground transition-colors duration-300 hover-lift"
                     aria-label="Previous testimonial"
                   >
                     <ChevronLeft className="h-5 w-5" />
@@ -510,7 +510,7 @@ const testimonials = [
                         className={`w-2 h-2 rounded-full transition-all duration-300 ${
                           index === currentTestimonial 
                             ? 'bg-primary scale-125' 
-                            : 'bg-gray-600 hover:bg-gray-500'
+                            : 'bg-muted-foreground hover:bg-muted-foreground/70'
                         }`}
                         aria-label={`Go to testimonial ${index + 1}`}
                       />
@@ -519,7 +519,7 @@ const testimonials = [
                   
                   <button
                     onClick={nextTestimonial}
-                    className="p-2 text-gray-400 hover:text-white transition-colors duration-300 hover-lift"
+                    className="p-2 text-muted-foreground hover:text-foreground transition-colors duration-300 hover-lift"
                     aria-label="Next testimonial"
                   >
                     <ChevronRight className="h-5 w-5" />
@@ -527,7 +527,7 @@ const testimonials = [
                 </div>
 
                 {/* Progress bar */}
-                <div className="mt-4 w-full bg-gray-700/50 rounded-full h-1">
+                <div className="mt-4 w-full bg-muted/50 rounded-full h-1">
                   <div 
                     className="bg-gradient-to-r from-primary to-secondary h-1 rounded-full transition-all duration-4000 ease-linear"
                     style={{
@@ -542,29 +542,29 @@ const testimonials = [
               <div className={`grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mt-8 transition-all duration-1000 delay-1400 ${
                 hasBeenVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}>
-                <div className={`text-center p-4 bg-white/5 rounded-lg hover-lift transition-all duration-300 ${
+                <div className={`text-center p-4 bg-background/5 rounded-lg hover-lift transition-all duration-300 ${
                   hasBeenVisible ? 'animate-stat-counter' : ''
                 }`} style={{ animationDelay: '1.6s' }}>
                   <div className="text-2xl sm:text-3xl font-bold text-primary mb-1">98%</div>
-                  <div className="text-xs sm:text-sm text-gray-400">Pass Rate</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">Pass Rate</div>
                 </div>
-                <div className={`text-center p-4 bg-white/5 rounded-lg hover-lift transition-all duration-300 ${
+                <div className={`text-center p-4 bg-background/5 rounded-lg hover-lift transition-all duration-300 ${
                   hasBeenVisible ? 'animate-stat-counter' : ''
                 }`} style={{ animationDelay: '1.7s' }}>
                   <div className="text-2xl sm:text-3xl font-bold text-green-500 mb-1">45%</div>
-                  <div className="text-xs sm:text-sm text-gray-400">Grade Boost</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">Grade Boost</div>
                 </div>
-                <div className={`text-center p-4 bg-white/5 rounded-lg hover-lift transition-all duration-300 ${
+                <div className={`text-center p-4 bg-background/5 rounded-lg hover-lift transition-all duration-300 ${
                   hasBeenVisible ? 'animate-stat-counter' : ''
                 }`} style={{ animationDelay: '1.8s' }}>
                   <div className="text-2xl sm:text-3xl font-bold text-blue-500 mb-1">3x</div>
-                  <div className="text-xs sm:text-sm text-gray-400">Productivity</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">Productivity</div>
                 </div>
-                <div className={`text-center p-4 bg-white/5 rounded-lg hover-lift transition-all duration-300 ${
+                <div className={`text-center p-4 bg-background/5 rounded-lg hover-lift transition-all duration-300 ${
                   hasBeenVisible ? 'animate-stat-counter' : ''
                 }`} style={{ animationDelay: '1.9s' }}>
                   <div className="text-2xl sm:text-3xl font-bold text-purple-500 mb-1">2min</div>
-                  <div className="text-xs sm:text-sm text-gray-400">Setup Time</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">Setup Time</div>
                 </div>
               </div>
             </div>
@@ -577,24 +577,24 @@ const testimonials = [
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           {/* Backdrop with blur effect */}
           <div 
-            className="absolute inset-0 bg-black/80 backdrop-blur-md transition-opacity duration-500 animate-fade-in"
+            className="absolute inset-0 bg-background/80 backdrop-blur-md transition-opacity duration-500 animate-fade-in"
             onClick={closeVideoModal}
           />
           
           {/* Modal Container */}
           <div className="relative w-full h-full max-w-6xl max-h-[90vh] mx-4 sm:mx-8 flex items-center justify-center animate-scale-in">
-            <div className="relative w-full h-full max-h-[80vh] bg-gray-900/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/10 overflow-hidden">
+            <div className="relative w-full h-full max-h-[80vh] bg-background/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-border overflow-hidden">
               
               {/* Modal Header */}
-              <div className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between p-4 sm:p-6 bg-gradient-to-b from-black/50 to-transparent">
+              <div className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between p-4 sm:p-6 bg-gradient-to-b from-background/50 to-transparent">
                 <div className="flex items-center space-x-3">
                   <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-                  <h3 className="text-white font-semibold text-lg sm:text-xl">Platform Demo</h3>
+                  <h3 className="text-foreground font-semibold text-lg sm:text-xl">Platform Demo</h3>
                 </div>
                 
                 <button
                   onClick={closeVideoModal}
-                  className="p-2 text-gray-400 hover:text-white transition-colors duration-300 hover-lift bg-black/20 rounded-lg hover:bg-black/40"
+                  className="p-2 text-muted-foreground hover:text-foreground transition-colors duration-300 hover-lift bg-background/20 rounded-lg hover:bg-background/40"
                   aria-label="Close video"
                 >
                   <X className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -623,11 +623,11 @@ const testimonials = [
                 </video>
 
                 {/* Video Overlay Controls */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="w-full p-4 sm:p-6 space-y-4">
                     
                     {/* Progress Bar */}
-                    <div className="w-full bg-white/20 rounded-full h-1 overflow-hidden">
+                    <div className="w-full bg-foreground/20 rounded-full h-1 overflow-hidden">
                       <div 
                         className="h-full bg-gradient-to-r from-primary to-secondary transition-all duration-300"
                         style={{ width: `${videoProgress}%` }}
@@ -639,39 +639,39 @@ const testimonials = [
                       <div className="flex items-center space-x-3 sm:space-x-4">
                         <button
                           onClick={togglePlayPause}
-                          className="p-2 sm:p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 hover-lift"
+                          className="p-2 sm:p-3 bg-foreground/10 hover:bg-foreground/20 rounded-lg transition-all duration-300 hover-lift"
                           aria-label={isVideoPlaying ? "Pause" : "Play"}
                         >
-                          <Play className={`h-5 w-5 sm:h-6 sm:w-6 text-white transition-transform duration-300 ${isVideoPlaying ? 'scale-0' : 'scale-100'}`} />
+                          <Play className={`h-5 w-5 sm:h-6 sm:w-6 text-foreground transition-transform duration-300 ${isVideoPlaying ? 'scale-0' : 'scale-100'}`} />
                           <div className={`absolute inset-0 flex items-center justify-center transition-transform duration-300 ${isVideoPlaying ? 'scale-100' : 'scale-0'}`}>
-                            <div className="w-1 h-4 sm:h-5 bg-white rounded-sm mx-0.5"></div>
-                            <div className="w-1 h-4 sm:h-5 bg-white rounded-sm mx-0.5"></div>
+                            <div className="w-1 h-4 sm:h-5 bg-foreground rounded-sm mx-0.5"></div>
+                            <div className="w-1 h-4 sm:h-5 bg-foreground rounded-sm mx-0.5"></div>
                           </div>
                         </button>
                         
                         <button
                           onClick={restartVideo}
-                          className="p-2 sm:p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 hover-lift"
+                          className="p-2 sm:p-3 bg-foreground/10 hover:bg-foreground/20 rounded-lg transition-all duration-300 hover-lift"
                           aria-label="Restart video"
                         >
-                          <RotateCcw className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
+                          <RotateCcw className="h-4 w-4 sm:h-5 sm:w-5 text-foreground" />
                         </button>
                         
                         <button
                           onClick={toggleMute}
-                          className="p-2 sm:p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 hover-lift"
+                          className="p-2 sm:p-3 bg-foreground/10 hover:bg-foreground/20 rounded-lg transition-all duration-300 hover-lift"
                           aria-label={isVideoMuted ? "Unmute" : "Mute"}
                         >
                           {isVideoMuted ? (
-                            <VolumeX className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
+                            <VolumeX className="h-4 w-4 sm:h-5 sm:w-5 text-foreground" />
                           ) : (
-                            <Volume2 className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
+                            <Volume2 className="h-4 w-4 sm:h-5 sm:w-5 text-foreground" />
                           )}
                         </button>
                       </div>
 
                       <div className="flex items-center space-x-2 sm:space-x-3">
-                        <span className="text-white text-xs sm:text-sm bg-black/40 px-2 py-1 rounded">
+                        <span className="text-foreground text-xs sm:text-sm bg-background/40 px-2 py-1 rounded">
                           {Math.floor(videoProgress)}%
                         </span>
                         <button
@@ -682,10 +682,10 @@ const testimonials = [
                               }
                             }
                           }}
-                          className="p-2 sm:p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-all duration-300 hover-lift"
+                          className="p-2 sm:p-3 bg-foreground/10 hover:bg-foreground/20 rounded-lg transition-all duration-300 hover-lift"
                           aria-label="Fullscreen"
                         >
-                          <Maximize className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
+                          <Maximize className="h-4 w-4 sm:h-5 sm:w-5 text-foreground" />
                         </button>
                       </div>
                     </div>
@@ -694,8 +694,8 @@ const testimonials = [
 
                 {/* Loading animation */}
                 {!isVideoPlaying && videoProgress === 0 && (
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                    <div className="flex items-center space-x-3 text-white">
+                  <div className="absolute inset-0 flex items-center justify-center bg-background/20">
+                    <div className="flex items-center space-x-3 text-foreground">
                       <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
                       <span className="text-lg font-medium">Loading...</span>
                     </div>
@@ -711,7 +711,7 @@ const testimonials = [
                     className="p-6 bg-primary/90 hover:bg-primary rounded-full shadow-2xl transition-all duration-300 hover-lift hover:scale-110 animate-pulse-glow"
                     aria-label="Play video"
                   >
-                    <Play className="h-12 w-12 text-white ml-1" />
+                    <Play className="h-12 w-12 text-foreground ml-1" />
                   </button>
                 </div>
               )}

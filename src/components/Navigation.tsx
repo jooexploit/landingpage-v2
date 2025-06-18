@@ -148,7 +148,7 @@ export const Navigation = () => {
                 }`}
                 style={{ transitionDelay: '800ms' }}
               >
-                <span className="hidden sm:inline">Get Started</span>
+                <span className="hidden sm:inline"><a href="https://jooexploit.github.io/shoky-v2/">Get Started</a></span>
                 <span className="sm:hidden">Start</span>
               </Button>
 
@@ -234,7 +234,7 @@ export const Navigation = () => {
               size="lg"
               className="w-40 bg-primary hover:bg-primary/90 text-white hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              Get Started
+              <a href="https://jooexploit.github.io/shoky-v2/">Get Started</a>
             </Button>
           </div>
         </div>

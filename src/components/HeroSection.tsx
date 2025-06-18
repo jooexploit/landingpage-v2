@@ -38,7 +38,7 @@ export const HeroSection = () => {
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-semibold rounded-xl hover-lift group shadow-2xl animate-pulse-glow"
               >
-                Get Started for Free
+                <a href="https://jooexploit.github.io/shoky-v2/">Get Started for Free</a>
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>

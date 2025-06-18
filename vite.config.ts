@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+    base: '/landingpage-v2/', 
   plugins: [
     react(),
     mode === 'development' &&

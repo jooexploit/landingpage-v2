@@ -64,7 +64,7 @@ export const Navigation = () => {
             }`}>
               <div className="relative group">
                 <img 
-                  src="landingpage-v2/icon.png" 
+                  src="https://raw.githubusercontent.com/jooexploit/landingpage-v2/refs/heads/main/public/icon.png" 
                   alt="T.S Helper Logo" 
                   className="w-8 h-8 sm:w-10 sm:h-10 transition-all duration-300 hover:scale-110 hover:rotate-12 drop-shadow-lg hover:drop-shadow-xl"
                 />
